@@ -4,7 +4,7 @@ Resources:
     Properties:
       InstanceType: t2.micro
       ImageId: ami-08c40ec9ead489470
-      KeyName: aizzywindow
+      KeyName: cloudbolt_itss_test
       SecurityGroups:
         - !Ref AppNodeSG
       UserData: !Base64 |
