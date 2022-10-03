@@ -3,8 +3,8 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: t2.micro
-      ImageId: ami-017fecd1353bcc96e
-      KeyName: aizzyoregon
+      ImageId: ami-08c40ec9ead489470
+      KeyName: cloudbolt_itss_test
       SecurityGroups:
         - !Ref AppNodeSG
       UserData: !Base64 |
