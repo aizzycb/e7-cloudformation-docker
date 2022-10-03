@@ -56,3 +56,7 @@ Resources:
       GroupDescription: Security Group for RDS public access
       DBSecurityGroupIngress:
         - CIDRIP: 0.0.0.0/0
+Outputs:
+  RDSEndpoint:
+    Description: "Connection endpoint for the database"
+    Value: !GetAtt DatabaseInstance.Endpoint.Address
